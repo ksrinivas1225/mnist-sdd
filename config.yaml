@@ -1,0 +1,23 @@
+seed: 42
+
+data:
+  root: ./data
+  batch_size: 64
+  num_workers: 2
+  normalize:
+    mean: 0.1307
+    std: 0.3081
+
+model:
+  hidden_layers: [256, 128]
+  activation: relu
+
+train:
+  epochs: 5
+  optimizer: adam
+  lr: 1.0e-3
+  checkpoint_path: ./outputs/best_model.pt
+
+evaluate:
+  checkpoint_path: ./outputs/best_model.pt
+  device: cpu

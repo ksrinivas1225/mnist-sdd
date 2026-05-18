@@ -1,0 +1,8 @@
+data/
+outputs/
+__pycache__/
+*.pyc
+*.pth
+*.pt
+.pytest_cache/
+.claude/
